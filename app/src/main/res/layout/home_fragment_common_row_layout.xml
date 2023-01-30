@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/home_fragment_common_first_row"
+        android:visibility="gone"
+        layout="@layout/home_fragment_1st_row_layout"></include>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="30dp"
+        app:cardMaxElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/home_fragment_common_first_row"
+        app:cardBackgroundColor="?attr/colorPrimary"
+        >
+        <LinearLayout
+            android:id="@+id/main_in_this_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                android:padding="3dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:layout_gravity="start"
+                    android:id="@+id/home_fragment_common_sender_image"
+                    ></de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mehedi Hasan Emon"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="?attr/colorAccent"
+                        android:id="@+id/home_fragment_common_sender_name"
+                        ></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="time"
+                        android:textStyle="bold"
+                        android:paddingLeft="0dp"
+                        android:textColor="@color/greenForImage"
+                        android:id="@+id/home_fragment_common_send_time"
+                        ></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_post_common_layout_with_image"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="3dp"
+                    android:textSize="16sp"
+                    android:text="Hello i am Emon .. And this is my profile picture..............."
+                    android:id="@+id/home_fragment_common_main_text"
+                    ></TextView>
+                <ImageView
+                    android:layout_below="@id/home_fragment_common_main_text"
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/home_fragment_common_main_image"
+                    ></ImageView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_post_common_layout_with_out_image"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/haha_image_background"
+                    ></ImageView>
+
+                <TextView
+                    android:id="@+id/home_fragment_common_main_text_layout_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:hint="What's on your mind ?"
+                    android:textColor="@color/redForImportant"
+                    android:textColorHint="@color/redForImportant"
+                    android:textSize="20sp"
+                    android:background="@null"
+                    android:layout_centerHorizontal="true"
+                    ></TextView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Number of like"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/greenForImage"
+                    android:id="@+id/home_fragment_common_number_of_like"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of dislike"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/redForImportant"
+                    android:id="@+id/home_fragment_common_number_of_dislike"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_margin="5dp"
+                android:paddingBottom="8dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Like"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="?attr/colorAccent"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/home_fragment_1st_row_disgn_text_view"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comment"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textColor="?attr/colorAccent"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/home_fragment_1st_row_disgn_text_view"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dislike"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="?attr/colorAccent"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/home_fragment_1st_row_disgn_text_view"
+                    ></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

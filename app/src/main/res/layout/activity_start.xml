@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".StartActivity">
+
+    <include
+        layout="@layout/appbarmain"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/just_resize"
+        android:layout_height="70dp"></View>
+
+    <RelativeLayout
+        android:layout_below="@+id/just_resize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frame_container"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/main_page_fragment_design_start_activity"
+            ></FrameLayout>
+
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:mbn_circleColor="#ffffff"
+            android:id="@+id/bottom_navigation_view"
+            app:mbn_backgroundBottomColor="?attr/colorPrimary"
+            app:mbn_countBackgroundColor="?attr/colorAccent"
+            app:mbn_countTextColor="#ffffff"
+            app:mbn_defaultIconColor="?attr/colorAccent"
+            app:mbn_rippleColor="#2f424242"
+            app:mbn_selectedIconColor="?attr/colorAccent"
+            app:mbn_shadowColor="#1f212121"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

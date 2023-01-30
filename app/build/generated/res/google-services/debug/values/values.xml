@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">574608722781-m2itrfm29b17hh7qbs8j2d0iv20f0a8n.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">574608722781</string>
+    <string name="google_api_key" translatable="false">AIzaSyCGcAvCqAsxETMi2HkC5LlVC_21nrbJyRs</string>
+    <string name="google_app_id" translatable="false">1:574608722781:android:6ce5e7aca8e4b73ca3f6b4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCGcAvCqAsxETMi2HkC5LlVC_21nrbJyRs</string>
+    <string name="google_storage_bucket" translatable="false">cr-assistant.appspot.com</string>
+    <string name="project_id" translatable="false">cr-assistant</string>
+</resources>

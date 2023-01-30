@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/login_top_view"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+        ></View>
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/login_second_view"
+        android:layout_below="@+id/login_top_view"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_wave"
+        ></View>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_persion"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        ></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have an \nAccount?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_second_view"
+        android:id="@+id/login_email_text"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_email"
+        android:layout_marginRight="30dp"
+        android:hint="   Email"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/round_border"
+
+        ></EditText>
+
+    <EditText
+        android:id="@+id/login_password_text"
+        android:layout_below="@+id/login_email_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:layout_marginRight="30dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:textColor="@color/colorPrimary"
+        android:hint="   Password.."
+        android:background="@drawable/round_border"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_button"
+        android:padding="20dp"
+        android:layout_below="@+id/login_password_text"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/login_button">
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:text="Need New Account? Sign Up"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/need_new_account"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        ></TextView>
+
+
+</RelativeLayout>

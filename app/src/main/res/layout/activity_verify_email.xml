@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyEmail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/send_email_layout"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/alex_brush"
+            android:padding="20dp"
+            android:text="Please Enter Kuet Email"
+            android:textColor="?attr/colorAccent"
+            android:textSize="30sp"
+            android:id="@+id/top_view_in_verify_email"
+            android:textStyle="bold"></TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_below="@+id/top_view_in_verify_email"
+            android:hint="Enter Kuet Email"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/redForImportant"
+            android:outlineSpotShadowColor="?attr/colorAccent"
+            android:outlineAmbientShadowColor="?attr/colorAccent"
+            app:boxStrokeColor="?attr/colorAccent"
+            app:hintTextColor="?attr/colorAccent"
+            app:errorTextColor="@color/redForImportant"
+            app:endIconMode="clear_text"
+            android:id="@+id/just_nothing_one"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/verify_Email_address_edit_text"
+                ></com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/just_nothing_one"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_button"
+            android:text="Send Verify Code"
+            android:textColor="?attr/colorAccent"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:id="@+id/verify_email_address_button"
+            ></Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/verify_code_layout"
+        android:visibility="gone"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:id="@+id/verify_code"
+            android:hint="Enter your code.."
+            ></EditText>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:id="@+id/verify_code_button"
+            android:layout_below="@+id/verify_code"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center"
+            android:textColor="?attr/colorAccent"
+            ></Button>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

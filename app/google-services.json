@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "574608722781",
+    "firebase_url": "https://cr-assistant-default-rtdb.firebaseio.com",
+    "project_id": "cr-assistant",
+    "storage_bucket": "cr-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574608722781:android:6ce5e7aca8e4b73ca3f6b4",
+        "android_client_info": {
+          "package_name": "com.example.crassistantKuet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574608722781-m2itrfm29b17hh7qbs8j2d0iv20f0a8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGcAvCqAsxETMi2HkC5LlVC_21nrbJyRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574608722781-m2itrfm29b17hh7qbs8j2d0iv20f0a8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
